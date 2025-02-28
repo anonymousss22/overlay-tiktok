@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Stream Overlay</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: url('your-background-image.jpg') no-repeat center center/cover;
+        }
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .frame {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 20px;
+            padding: 15px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            border: 3px solid rgba(255, 255, 255, 0.5);
+        }
+        .stream-frame {
+            width: 55%;
+            height: 50%;
+            top: 20%;
+            left: 5%;
+            border: 5px solid #00FFEA;
+            box-shadow: 0 0 25px #00FFEA;
+            border-radius: 15px;
+        }
+        .chat-frame {
+            width: 30%;
+            height: 60%;
+            top: 15%;
+            right: 2%;
+            border: 5px solid #FF00FF;
+            box-shadow: 0 0 25px #FF00FF;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="frame stream-frame">LIVE STREAM</div>
+        <div class="frame chat-frame">LIVE CHAT</div>
+    </div>
+</body>
+</html>
